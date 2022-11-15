@@ -3,10 +3,14 @@ body {
   text-align: center;
 }
 p {
-  font-size: 1vw;
+  font-size: 1.1vw;
+  line-height: 1.3;
 }
 h1 {
-  font-size: 2vw;
+  font-size: 2.3vw;
+  font-family:'Abril Fatface', cursive;
+  font-weight: lighter;
+  line-height: 1;
 }
 .product-container {
   position: relative;
@@ -15,47 +19,64 @@ h1 {
   padding: 50px;
 }
 .product-box {
+  border-radius: 8px;
+  /* overflow: hidden; */
   position: relative;
   display: inline-block;
   width: 50%;
   margin: 50px auto;
   background-color: white;
+  text-align: left;
 }
 .product-image {
-  display: block;
-  width: 50%;
   float: left;
-  margin-right: 30px;
+  width: 50%;
+  border-radius: 8px 0 0 8px;
 }
-.product-data  {
-  padding: 30px;
+.product-data-outer  {
+  position: absolute;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
   text-align: left;
+}
+.product-data{
+  padding: 20px 30px;
 }
 .product-data p {
   color: grey;
 }
-.product-data del {
-  color: grey;
+.product-title {
+  font-family:'Montserrat', sans-serif;
+  font-weight: bold;
 }
 .product-prices {
   margin-bottom: 20px;
   padding: 10px 0;
+  color: #3f846a;
+}
+.product-prices del {
+  color: grey;
+  font-size: 1vw;
+  margin-left: 10px;
 }
 .product-price{
+  font-family:'Abril Fatface', cursive;
   display: inline-block;
+  vertical-align: middle;
   font-size: 2.2vw;
 }
 .add-to-cart-btn {
-  /* float:right; */
-  /* display: inline-block; */
+  display: inline-block;
+  width: 100%;
   text-align: center;
   background: #3f806a;
   background-image: linear-gradient(top, #3f806a, #3f806a);
   background-image: linear-gradient(to bottom, #3f806a, #3f806a);
-  border-radius: 6px;
+  border-radius: 8px;
   font-family: Arial;
   color: #ffffff;
-  font-size: 1.3vw;
+  font-size: 1.1vw;
   padding: 10px 0;
   text-decoration: none;
 }
@@ -65,4 +86,7 @@ h1 {
   background-image: linear-gradient(top, #1a4031, #1a4031);
   background-image: linear-gradient(to bottom, #1a4031, #1a4031);
   text-decoration: none;
+}
+.add-to-cart-btn img {
+  margin-right: 10px;
 }
