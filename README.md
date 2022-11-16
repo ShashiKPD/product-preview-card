@@ -15,9 +15,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -30,7 +27,7 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop Design preview for the Product preview card coding challenge](./images/screenshot-desktop.png)
-![Mobile Design preview for the Product preview card coding challenge](images/screenshot-mobile.png)
+![Mobile Design preview for the Product preview card coding challenge](./images/screenshot-mobile.png)
 
 ### Links
 
