@@ -93,7 +93,7 @@ del {
   text-decoration: none;
 }
 .add-to-cart-btn img {
-  margin-right: 10px;
+  margin-right: 10px; 
 }
 @media only screen and (max-width: 1000px) {
   a {
