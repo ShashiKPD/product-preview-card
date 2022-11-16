@@ -3,14 +3,20 @@ body {
   text-align: center;
 }
 p {
-  font-size: 1.1vw;
-  line-height: 1.3;
+  color: grey;
+  font-size: 1.2vw;
+  line-height: 1.2;
+  margin: 1vw 0;
 }
 h1 {
   font-size: 2.3vw;
   font-family:'Abril Fatface', cursive;
   font-weight: lighter;
   line-height: 1;
+  margin: 1.5vw 0;
+}
+a {
+  font-size: 1.2vw;
 }
 .product-container {
   position: relative;
@@ -28,10 +34,13 @@ h1 {
   background-color: white;
   text-align: left;
 }
-.product-image {
-  float: left;
+.product-image1 {
+  /* float: left; */
   width: 50%;
   border-radius: 8px 0 0 8px;
+}
+.product-image2 {
+  display: none;
 }
 .product-data-outer  {
   position: absolute;
@@ -41,21 +50,18 @@ h1 {
   text-align: left;
 }
 .product-data{
-  padding: 20px 30px;
-}
-.product-data p {
-  color: grey;
+  padding: 1.1vw 1.7vw;
 }
 .product-title {
   font-family:'Montserrat', sans-serif;
   font-weight: bold;
 }
 .product-prices {
-  margin-bottom: 20px;
-  padding: 10px 0;
+  margin-bottom: 1vw;
+  padding: 1vw 0;
   color: #3f846a;
 }
-.product-prices del {
+del {
   color: grey;
   font-size: 1vw;
   margin-left: 10px;
@@ -76,7 +82,6 @@ h1 {
   border-radius: 8px;
   font-family: Arial;
   color: #ffffff;
-  font-size: 1.1vw;
   padding: 10px 0;
   text-decoration: none;
 }
@@ -89,4 +94,115 @@ h1 {
 }
 .add-to-cart-btn img {
   margin-right: 10px;
+}
+@media only screen and (max-width: 1000px) {
+  a {
+    font-size: 1.5vw;
+  }
+  p {
+    font-size: 1.6vw;
+  }
+  h1 {
+    font-size: 2.5vw;
+  }
+  del {
+    font-size: 1.4vw;
+  }
+  .product-container {
+    padding: 20px 0 50px;
+  }
+  .product-box {
+    margin: 20px auto;
+    text-align: center;
+    width: 35%;
+  }
+  .product-image1 {
+    display: none;
+  }
+  .product-image2 {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+  .product-data-outer{
+    position: relative;
+    width: 100%;
+  }
+  .product-data {
+    padding: 1.5vw 2vw;
+  }
+  .product-price {
+    font-size: 3vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  h1 {
+    font-size: 5vw;
+    line-height: 1.2;
+  }
+  p {
+    font-size: 3vw;
+    line-height: 1.2;
+  }
+  a {
+    font-size: 2.4vw;
+  }
+  del {
+    font-size: 2vw;
+  }
+  .product-container {
+    padding: 20px 0 50px;
+    margin: 15px;
+  }
+  .product-box {
+    width: 60%
+  }
+  .product-data{
+    padding: 2vw 3vw;
+  }
+  .product-price {
+    font-size: 5vw;
+  }
+  .add-to-cart-btn {
+    padding: 5px 0;
+  }
+}
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 8vw;
+    line-height: 1.3;
+    margin: 2vw 0;
+  }
+  p {
+    font-size: 5vw;
+    line-height: 1.3;
+    margin: 2.5vw 0;
+  }
+  a {
+    font-size: 4vw;
+  }
+  del {
+    font-size: 3.5vw;
+  }
+  .product-container {
+    padding: 10px 0 ;
+    margin: 4px;
+  }
+  .product-box {
+    width: 90%
+  }
+  .product-data{
+    padding: 5vw;
+  }
+  .product-price {
+    font-size: 7vw;
+  }
+  .product-prices {
+    margin-bottom: 2vw;
+    padding: 3vw 0;
+  }
+  .add-to-cart-btn {
+    padding: 5px 0;
+  }
 }
